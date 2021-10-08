@@ -233,7 +233,7 @@ header{
 
 /** Code for prefers reduced motion **/
 /* Make no changes below this line.
-   *************************************** 
+   ***************************************
    */
 @media screen and (prefers-reduced-motion: reduce){
   /*Turn off scroll*/
