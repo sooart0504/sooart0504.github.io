@@ -1,7 +1,7 @@
 /* To Dos
 - Add necessary code to body html so the 4 links go to correct locations
 - Add skip to content and "About" links to the main element
-- Stuck on #8 & 9, 10,
+- Stuck on 12
 
 
 */
@@ -31,16 +31,17 @@ header{
 
 .pricing{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column;  */
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 .card{
-    display: flex;
-    flex-flow: row wrap;
+    /* display: flex;
+    flex-flow: row wrap; */
     flex-basis: 450px;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .card header{
@@ -51,12 +52,19 @@ header{
     border-radius: 7px 7px 0 0;
 }
 
-.gallery{
+/* images within the gallery class */
+
+.gallery img{
     border: solid 10px #50C7C7;
     margin: 10px;
     width: 300px;
+}
+
+.gallery{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 #logo{
@@ -73,5 +81,27 @@ header{
     to {
         width: 425px;
         opacity: 1;
+    }
+}
+
+@media screen and (min-width: 850px){
+    header{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .nav_links{
+        flex-direction: row;
+    }
+
+    .card{
+        flex-basis: 250px;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    #logo{
+        animation-name: none;
     }
 }
