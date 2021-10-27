@@ -87,7 +87,7 @@ header{
 @media screen and (min-width: 850px){
     header{
         flex-direction: row;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         justify-content: space-between;
     }
 
@@ -103,5 +103,30 @@ header{
 @media screen and (prefers-reduced-motion: reduce){
     #logo{
         animation-name: none;
+    }
+}
+
+@media print{
+    body{
+        background-image: unset;
+    }
+
+    .nav_links{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .pricing{
+        align-items: flex-end;
+        flex-wrap: nowrap;
+    }
+
+    .card{
+        border: 2px #45ADAD;
+        flex-basis: 250px;
+    }
+
+    #gallery, .gallery{
+        visibility: hidden;
     }
 }
