@@ -1,0 +1,77 @@
+/* To Dos
+- Add necessary code to body html so the 4 links go to correct locations
+- Add skip to content and "About" links to the main element
+- Stuck on #8 & 9, 10,
+
+
+*/
+
+body{
+    font-family: 'Alegreya Sans SC', serif;
+    background-color: #f1f1f1;
+    background-image: url("../images/concrete_seamless.png");
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav_links a:visited{
+    color: #0000ff;
+}
+
+.pricing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 450px;
+    justify-content: center;
+}
+
+.card header{
+    background-color: #288088;
+    border: solid 2px #45ADAD;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 7px 7px 0 0;
+}
+
+.gallery{
+    border: solid 10px #50C7C7;
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+#logo{
+    animation-name: animate-logo;
+    animation-duration: 5s;
+}
+
+@keyframes animate-logo {
+    from{
+        width: 50px;
+        opacity: 0;
+
+    }
+    to {
+        width: 425px;
+        opacity: 1;
+    }
+}
