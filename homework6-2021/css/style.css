@@ -122,7 +122,7 @@ header{
     }
 
     .card{
-        border: 2px #45ADAD;
+        border: solid 2px #45ADAD;
         flex-basis: 250px;
     }
 
