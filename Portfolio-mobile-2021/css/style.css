@@ -84,17 +84,21 @@ footer p{
     font-size: 14pt;
     color: white;
 }
- .nav_item a:hover{
+.nav_item a:hover{
      color: orange;
- }
+}
 
- .current_link a{
+.current_link a{
      font-size: 14pt;
      font-weight: 600;
      color: #111;
      border: solid 3px white;
-     background-color: orange;
- }
+     background-color: rgb(143, 238, 255);
+}
+
+main a:link, main a:visited{
+    color: rgb(143, 238, 255);
+}
 
 .grid-1-column{
     display: grid;
