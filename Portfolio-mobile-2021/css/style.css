@@ -1,0 +1,112 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+}
+
+header img{
+    max-width: 160px;
+    padding: 24px;
+}
+
+body{
+    background-color: #111;
+    color: white;
+}
+
+#main-planet{
+    max-width: 300px;
+    margin: 24px;
+}
+
+.planet-serisse h1{
+    font-size: 36pt;
+    font-weight: 600;
+}
+
+h1{
+    font-size: 24pt;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 18pt;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 14pt;
+    font-weight: 600;
+}
+
+p{
+    font-size: 14pt;
+    color: #d0d0d0;
+}
+
+footer p{
+    color:#acacac;
+}
+
+main{
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 36px 12px;
+}
+
+.planet-serisse h1{
+    padding: 24px;
+    text-align: center;
+}
+
+footer{
+    min-height: 72px;
+    background:#222;
+    color: #acacac;
+    text-align: center;
+    padding-top: 16px;
+}
+
+footer p{
+    font-size: 12pt;
+}
+.nav_links a{
+    display: flex;
+    padding: 3px;
+}
+.nav_item a{
+    font-size: 14pt;
+    color: white;
+}
+ .nav_item a:hover{
+     color: orange;
+ }
+
+ .current_link a{
+     font-size: 14pt;
+     font-weight: 600;
+     color: #111;
+     border: solid 3px white;
+     background-color: orange;
+ }
+
+.grid-1-column{
+    display: grid;
+    margin: 5rem auto;
+}
+
+.grid-1-column div{
+    border: 2px solid #acacac;
+    padding: 12px;
+    margin-bottom: 16px;
+}
+
+.gallery .section{
+    margin-bottom: 16px;
+}
