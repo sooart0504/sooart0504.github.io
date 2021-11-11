@@ -32,7 +32,7 @@ document.querySelector("#faster").addEventListener("click", function() {
 document.querySelector("#skip").addEventListener("click", function() {
 	if (video.ended){
 		video.currentTime = 0;
-		video.play();
+// 		video.play();
 	}
 	else {
 		video.currentTime += 15;
