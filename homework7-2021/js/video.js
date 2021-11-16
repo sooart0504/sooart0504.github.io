@@ -30,13 +30,14 @@ document.querySelector("#faster").addEventListener("click", function() {
 });
 
 document.querySelector("#skip").addEventListener("click", function() {
-	if (video.ended){
+	if (video.ended == true){
+		video.loop = true
 		video.currentTime = 0;
 		console.log("Video has ended. Press start again!");
 		// video.play();
 	}
 	else {
-		video.currentTime += 15;
+		video.currentTime = video.currentTime + 15;
 		console.log("Video is skipped to " + video.currentTime);
 	}
 });
