@@ -1,0 +1,239 @@
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+
+
+    top: -40px;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+.skip a:focus{
+  top: auto;
+}
+
+
+a:focus{
+border: 2px solid;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    font-family: 'M PLUS Code Latin', sans-serif;
+}
+
+header img{
+    max-width: 160px;
+    padding: 24px;
+}
+
+main{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: rgb(22, 21, 29);
+    color: white;
+}
+
+#main-planet{
+    display: block;
+    max-width: 300px;
+    margin: 24px;
+}
+
+.planet-serisse h1{
+    font-size: 36pt;
+    font-weight: 600;
+}
+
+h1{
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-size: 28pt;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+h2{
+    font-size: 18pt;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+h3{
+    font-size: 14pt;
+    font-weight: 600;
+}
+
+p{
+    font-size: 14pt;
+    line-height: 1.4;
+    color: #d0d0d0;
+}
+
+footer p{
+    color:#acacac;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 95%;
+    grid-gap: 12px;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 36px 12px;
+}
+
+.planet-serisse h1{
+    padding: 24px;
+    text-align: center;
+}
+
+footer{
+    min-height: 72px;
+    background:rgb(30, 29, 41);
+    color: #acacac;
+    text-align: center;
+    padding-top: 16px;
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+footer p{
+    font-size: 12pt;
+}
+.nav_links a{
+    display: flex;
+    padding: 3px;
+}
+
+.nav_item a{
+    font-size: 14pt;
+    color: white;
+}
+.nav_item a:hover{
+     color: orange;
+}
+
+.current_link a{
+     font-size: 14pt;
+     font-weight: 600;
+     color: #111;
+     border: solid 3px white;
+     background-color: rgb(143, 238, 255);
+}
+
+main a:link, main a:visited{
+    color: rgb(143, 238, 255);
+}
+
+.grid-1-column{
+    display: grid;
+    margin: 5rem auto;
+}
+
+.grid-1-column div{
+    border: 2px solid #acacac;
+    padding: 12px;
+    margin-bottom: 16px;
+}
+
+.gallery .section{
+    margin-bottom: 16px;
+}
+
+#contact-form{
+    padding: 8px;
+    border: solid 2px rgb(143, 238, 255);
+}
+
+
+
+@media screen and (min-width:700px){
+	.grid-1-column{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-1-column div{
+        margin: 8px;
+    }
+
+    header{
+        justify-content: center;
+        line-height: 2.4em;
+    }
+
+    header div{
+        margin-right: 20px;
+    }
+
+    header nav{
+        margin-left: 20px;
+    }
+
+    .nav_item a{
+        font-size: 16pt;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    main p{
+        font-size: 16pt;
+        line-height: 1.6em;
+        color: #d0d0d0;
+    }
+
+    .gallery{
+        display: block;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .planet-serisse p{
+        display: block;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .playground{
+        display: block;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .comms-center{
+        display: block;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #main-planet{
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #contact-form{
+        padding: 16px;
+    }
+}
